@@ -35,11 +35,12 @@ function Menu({ header, children}:MenuProps) {
       <motion.div
         layout
    
-        className="group absolute font-normal pt-16 text-white p-4 text-center "
+        className="group absolute font-normal pt-20 left-1/2 -translate-x-1/2 top-1/2
+         text-white p-4 text-center "
        
       >
-        <motion.div layoutId='shadow' className="inset-0 top-12 absolute bg-blue-300/20 border-2 border-blue-300 z-[-1] rounded-lg"></motion.div>
-        <motion.h2 animate={{opacity:1}} className="text-lg font opacity-0 ">{header}</motion.h2>
+        <motion.div layoutId='shadow' className="inset-0 top-16 absolute bg-white/5 border-b border-x border-white/20 z-[-1] rounded-b-lg"></motion.div>
+        <motion.h2 animate={{opacity:1}} className="text-lg font opacity-0 whitespace-nowrap ">{header}</motion.h2>
         <motion.div animate={{opacity:1}} style={{opacity:0}}>
 
         {children}
