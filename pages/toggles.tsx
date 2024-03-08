@@ -11,8 +11,9 @@ export default function TogglePage() {
 <div className="flex flex-col gap-4">
 
 <LayoutGroup> 
-    <ToggleContent active={active===0} index={0} activate={setActive} header="header 1" content="content content content." />
-    <ToggleContent active={active===1} index={1} activate={setActive} header="header 1" content="content content content." />
+    <ToggleContent active={active===0} index={0} activate={setActive} header="header 1" content="content content content. 1" />
+    <ToggleContent active={active===1} index={1} activate={setActive} header="header 2" content="content content content. 2" />
+    <ToggleContent active={active===2} index={2} activate={setActive} header="header 3" content="content content content. 3" />
 </LayoutGroup>
 </div>
         </div>
